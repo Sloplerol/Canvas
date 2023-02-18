@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="600px" height="400px"></canvas>
+    <script>
+        let canvas = document.querySelector('canvas');
+        let ctx = canvas.getContext('2d');
+        //开始绘制圆
+        ctx.beginPath();
+        //参数依次是圆心位置 半径 起始弧度 结束弧度 是否逆时针绘制
+        ctx.arc(100,100,50,0,2*Math.PI,true);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(300,200,50,0,1,true);
+        ctx.stroke();
+        //2Pi弧度 = 360度
+        // 1弧度等于180/Pi 大约57度
+
+    </script>
+</body>
+</html>

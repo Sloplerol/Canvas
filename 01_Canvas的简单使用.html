@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="600px" height="300px"></canvas>
+    <script>
+        let canvas = document.querySelector('canvas');
+        let ctx = canvas.getContext('2d');
+        ctx.moveTo(100,100);
+        ctx.lineTo(200,200);
+        ctx.lineTo(100,300);
+        ctx.fillStyle = "red";
+        ctx.strokeStyle = "pink";
+        ctx.lineWidth = "20";
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fill();
+        
+    </script>
+</body>
+</html>

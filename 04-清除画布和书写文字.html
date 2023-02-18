@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="600px" height="400px"></canvas>
+    <script>
+        let canvas = document.querySelector('canvas');
+        let ctx = canvas.getContext('2d');
+        ctx.fillRect(100,200,100,200);
+        // 清除画布区域从100,200清除50x50y
+        ctx.clearRect(100,200,50,50);
+        ctx.font = '20px 微软雅黑'
+        ctx.fillStyle = 'red'
+        // 填充文本 以及文本所处位置
+        ctx.fillText('Echarts',50,50);
+    </script>
+</body>
+</html>

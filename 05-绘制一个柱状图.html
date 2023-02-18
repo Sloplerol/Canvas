@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="800" height="420"></canvas>
+    <script>
+        let canvas = document.querySelector('canvas');
+        let ctx = canvas.getContext('2d');
+        ctx.font = '20px 微软雅黑';
+        ctx.fillText('Echart',100,50);
+        ctx.moveTo(100,100);
+        ctx.lineTo(100,400);
+        ctx.lineTo(700,400);
+        ctx.stroke();
+        
+        ctx.moveTo(100,100);
+        ctx.lineTo(700,100);
+        ctx.stroke();
+        ctx.fillText('150',70,110);
+
+        ctx.moveTo(100,160);
+        ctx.lineTo(700,160);
+        ctx.stroke();
+        ctx.fillText('120',70,170);
+
+        ctx.moveTo(100,220);
+        ctx.lineTo(700,220);
+        ctx.stroke();
+        ctx.fillText('90',70,230);
+
+
+        ctx.moveTo(100,280);
+        ctx.lineTo(700,280);
+        ctx.stroke();
+        ctx.fillText('60',70,290);
+
+
+        ctx.moveTo(100,340);
+        ctx.lineTo(700,340);
+        ctx.stroke();
+        ctx.fillText('30',70,350);
+        ctx.fillText('0',70,410);
+
+
+        ctx.moveTo(250,400);
+        ctx.lineTo(250,410);
+        ctx.stroke();
+        ctx.fillText('食品',168,417)
+        
+        ctx.moveTo(400,400);
+        ctx.lineTo(400,410);
+        ctx.stroke();
+        ctx.fillText('数码',318,417)
+
+        ctx.moveTo(550,400);
+        ctx.lineTo(550,410);
+        ctx.stroke();
+        ctx.fillText('服饰',468,417)
+
+        ctx.fillText('香包',618,417)
+        ctx.fillStyle = 'red';
+        ctx.fillRect(120,200,110,200);
+        ctx.fillRect(270,100,110,300);
+        ctx.fillRect(420,300,110,100);
+        ctx.fillRect(570,350,110,50);
+
+        
+
+    </script>
+</body>
+</html>

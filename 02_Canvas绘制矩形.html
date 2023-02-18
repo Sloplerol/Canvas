@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="600px" height="400px"></canvas>
+    <script>
+        let canvas = document.querySelector('canvas');
+        let ctx = canvas.getContext('2d');
+        //设置的依次是距离x距离 距离y距离 矩形x 矩形y
+        ctx.strokeRect(100,200,100,200);
+        //设置填充颜色的矩形
+        ctx.fillStyle = 'red';
+        ctx.fillRect(300,200,100,200);
+        
+    </script>
+</body>
+</html>
